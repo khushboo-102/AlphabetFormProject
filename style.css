@@ -1,20 +1,36 @@
+/* ............Style for phone................. */
+/* ..........Nav........... */
+nav {
+    background-color: #1375E4;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    height: 130px;
+}
+
+nav img {
+    width: 80px;
+    /* padding-top: 15px; */
+    border-radius: 92%;
+}
+
 .div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nav {
-    background-color: #1375E4;
-    display: flex;
-    justify-content: space-evenly;
-    color: white;
+nav div:hover {
+    background-color: #004CA1;
 }
 
-/* nav img:hover{
- color: #8C97A4;
-} */
-
+/* .................Main.......................... */
+main {
+    color: #1375E4;
+    font-size: larger;
+    font-weight: 600;
+    padding-left: 9%;
+}
 
 main p {
     color: #8C97A4;
@@ -27,19 +43,8 @@ main p {
     border: 2px dashed #85b9f6;
 }
 
-/* ::placeholder{
-    color:#2987f3;
-    /* font-weight: bolder; */
-/* } */
 hr {
     color: #1375E4;
-}
-
-main {
-    color: #1375E4;
-    font-size: larger;
-    font-weight: 600;
-    padding-left: 9%;
 }
 
 input {
@@ -66,7 +71,7 @@ input[type="button"] {
     width: 75%;
     height: 65%;
     /* padding-right: 50%; */
-    margin-left: 30px;
+    margin-left: 25px;
 }
 
 h5 {
@@ -74,16 +79,13 @@ h5 {
     padding-top: 20%;
     padding-left: 5%;
 }
-h5 img{
+
+h5 img {
     /* height: 30px; */
     width: 20px;
- }
-
-a {
-    text-decoration: none;
-    color: white;
 }
 
+/* ..................footer...................*/
 footer {
     width: 100%;
     background-color: #1375E4;
@@ -97,12 +99,63 @@ footer {
     /* position: absolute; */
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 footer a:hover {
     text-decoration: underline;
 }
 
 /* ...........style for desktop.............. */
 @media (min-width:764px) {
-    
-    
+    .imgInput {
+        width: 10%;
+        height: 190px;
+    }
+
+    .form-detail {
+        display: flex;
+        /* justify-content: space-around; */
+    }
+
+    .text-type {
+        width: 70%;
+    }
+    .number-type{
+        width: 150%;
+    }
+
+    input[type="button"] {
+        margin-top: 40px;
+        padding: 20px;
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 30px;
+    }
+
+    h5 {
+        padding-top: 80px;
+        padding-left: 30%;
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 150%;
+        font-weight: 400;
+    }
+    .last-div{
+        width: 150%;
+    }
+    .lastDiv-detail{
+        display: flex;
+        /* justify-content: space-around */
+        gap: 17%;
+    }
+
+
 }
